@@ -73,6 +73,8 @@ nav {
 
 }
 
+
+
 nav ul {
   display: flex;
   justify-content: space-between;
@@ -232,7 +234,9 @@ picture img{
   text-align: left;
 }
 
-
+.contact-button button{
+  display: none;
+}
 
 
 
@@ -253,7 +257,7 @@ footer{
 .social {
   display: flex;
 }
- 
+
 .social img{
    -webkit-filter: invert(1);
    filter: invert(1);
@@ -268,12 +272,11 @@ footer{
 @media only screen and (max-width: 500px) {
 
 
-  .navbar-container{
-    display: none;
-  }
-  .logo a{
-    padding-left: 10px;
-  }
+.navbar-container{
+  display: none;
+}
+
+
 
 .home{
   padding: 100px 50px 100px 50px;
@@ -282,4 +285,40 @@ footer{
   .about{
     flex-direction: column;
     justify-content: center;
+  }
+
+.contact-button a{
+  text-decoration: none;
+  color: #FFFFFF;
+
+}
+
+.contact-button button{
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+
+  color: #FFFFFF;
+  background-color: #5995DA;
+
+  border: none;
+  border-radius: 3px;
+  margin: auto;
+  padding: 20px 40px;
+  cursor: pointer;
+
+}
+
+.contact-button button:hover {
+  background-color: #76AEED;
+}
+
+.contact-button button:active {
+  background-color: #407FC7;
+}
+
+
+
+  footer{
+    font-weight: 200;
   }
